@@ -21,6 +21,8 @@ public class FirstActivity extends AppCompatActivity {
 
         initView();
 
+        initTextView(FirstActivity.this.getTaskId(), FirstActivity.this.toString());
+
         first_But.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,5 +44,13 @@ public class FirstActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setClass(FirstActivity.this, classname);
         startActivity(intent);
+    }
+
+    //初始化TextView显示
+    private void initTextView(int id, String msg) {
+        int pos = msg.indexOf("@");
+        String substr = msg.substring(pos + 1, msg.length() - 1);
+        first_taskID.setText(first_taskID.getText().toString() + String.valueOf(id));
+        first_actMSG.setText(first_actMSG.getText().toString() + substr);
     }
 }

@@ -8,4 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TaskAnimation" parent="@android:style/Animation">
+        <!--<item name="android:taskOpenEnterAnimation">@anim/task_open_enter</item>
+        <item name="android:taskOpenExitAnimation">@anim/task_open_exit</item>
+        <item name="android:taskCloseEnterAnimation">@anim/task_close_enter</item>
+        <item name="android:taskCloseExitAnimation">@anim/task_close_exit</item>-->
+
+        <item name="android:taskToFrontEnterAnimation">@anim/task_open_enter</item>
+        <item name="android:taskToFrontExitAnimation">@anim/task_open_exit</item>
+        <item name="android:taskToBackEnterAnimation">@anim/task_close_enter</item>
+        <item name="android:taskToBackExitAnimation">@anim/task_close_exit</item>
+    </style>
+
+    <style name="MyTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/TaskAnimation</item>
+    </style>
+
 </resources>

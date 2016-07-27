@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="animation.meizu.cuicui.taskanimationdemo.SecondActivity">
+    tools:context="animation.meizu.cuicui.taskanimationdemo.FourthActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/second_taskid"
+            android:id="@+id/fourth_taskid"
             android:textSize="@dimen/textsize"
             android:text="Task ID:"
             android:padding="10dp"/>
@@ -25,20 +25,44 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/second_act_msg"
+            android:id="@+id/fourth_act_msg"
             android:textSize="@dimen/textsize"
             android:text="Activity MSG:"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourth_current"
+            android:textSize="@dimen/textsize"
+            android:text="当前ACT:"
             android:padding="10dp"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/second_next_but"
+            android:id="@+id/fourth_next_but"
             android:textSize="@dimen/textsize"
-            android:text="跳转"
+            android:text="跳转 FourthActivity"
             android:padding="10dp"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourth_third_but"
+            android:textSize="@dimen/textsize"
+            android:text="跳转 ThirdActivity"
+            android:padding="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourth_act_back"
+            android:textSize="@dimen/textsize"
+            android:text="BackGround"
+            android:padding="10dp"/>
 
     </LinearLayout>
+
 
 </RelativeLayout>
